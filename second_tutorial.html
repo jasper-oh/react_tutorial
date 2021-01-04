@@ -31,11 +31,28 @@
                 return(<div style={circleStyle}></div>);
             }
         }
+<<<<<<< HEAD
         
         
         ReactDOM.render(
             <div>
                 <Circle bgColor="#F9C240"/>
+=======
+        function showCircle() {
+            var color = ["#393E41","#E94F37","1C89BF","#A1D363"];
+            var ran = Math.floor(Math.random() * color.length);
+
+            return <Circle bgColor={color[ran]}/>;
+        }
+
+        
+        ReactDOM.render(
+            <div>
+                {showCircle()}
+                {showCircle()}
+                {showCircle()}
+                {showCircle()}
+>>>>>>> new-function
             </div>,
             document.querySelector("#container")
         );
